@@ -1237,23 +1237,16 @@ if (menuButton && nav) {
 /* ==========================================
    MOBILE MENU
 ========================================== */
-
 document.addEventListener("DOMContentLoaded", function () {
-
     const navToggle = document.querySelector(".nav-toggle");
     const navMenu = document.querySelector(".nav-menu");
 
+    console.log("navToggle:", navToggle);
+    console.log("navMenu:", navMenu);
+
     if (!navToggle || !navMenu) return;
 
-    navToggle.addEventListener("click", function () {
+    navToggle.onclick = function () {
         navMenu.classList.toggle("active");
-    });
-
-    // Close menu when a link is clicked
-    navMenu.querySelectorAll("a").forEach(function (link) {
-        link.addEventListener("click", function () {
-            navMenu.classList.remove("active");
-        });
-    });
-
+    };
 });

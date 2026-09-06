@@ -6545,3 +6545,1622 @@ footer::after{
     }
 
 }
+/* ================================
+   MOBILE RESPONSIVE FIX
+   ================================ */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Prevent large sections from pushing outside the screen */
+main,
+section,
+footer,
+header {
+    max-width: 100%;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* Header */
+    header {
+        width: 100%;
+    }
+
+    /* Hero */
+    .hero {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hero .container {
+        width: 100%;
+        padding: 70px 20px 40px;
+    }
+
+    /* Hero heading */
+    .hero h1 {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(42px, 11vw, 64px);
+        line-height: 0.98;
+        letter-spacing: -2px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    /* Hero paragraph */
+    .hero p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    /* Hero layout */
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+    }
+
+    /* Dashboard / hero visual */
+    .hero-dashboard,
+    .dashboard,
+    .dashboard-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Buttons */
+    .hero-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .hero-buttons a,
+    .hero-buttons button {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* Images */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Cards */
+    .card,
+    .service-card,
+    .feature-card {
+        max-width: 100%;
+    }
+}
+
+/* Smaller phones */
+@media (max-width: 480px) {
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero .container {
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 55px;
+    }
+
+    .hero h1 {
+        font-size: clamp(38px, 10.5vw, 52px);
+        line-height: 1;
+        letter-spacing: -1.5px;
+    }
+
+    .hero p {
+        font-size: 17px;
+        line-height: 1.55;
+    }
+}
+/* Mobile menu */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    nav.mobile-open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 20px;
+        background: #000;
+        z-index: 1000;
+    }
+
+    nav.mobile-open a {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+}
+/* ==========================================
+   MOBILE RESPONSIVE FIX
+========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Hamburger */
+.nav-toggle {
+    display: none;
+    border: none;
+    background: white;
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .site-header {
+        width: 100%;
+    }
+
+    .header-inner {
+        min-height: 82px;
+        width: 100%;
+    }
+
+    .brand {
+        min-width: 0;
+    }
+
+    .brand span {
+        white-space: nowrap;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 82px;
+        left: 20px;
+        right: 20px;
+        width: auto;
+        flex-direction: column;
+        background: #ffffff;
+        border-radius: 18px;
+        padding: 15px;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        z-index: 9999;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu.open a {
+    color: #111827 !important;
+    background: #ffffff !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    display: block !important;
+    text-decoration: none !important;
+}
+
+.nav-menu.open a:hover {
+    color: #7c3aed !important;
+}
+
+    .header-buttons {
+        display: none;
+    }
+
+    .nav-toggle {
+        display: flex;
+        flex-shrink: 0;
+        position: relative;
+        z-index: 10000;
+    }
+
+    /* HERO */
+
+    .hero {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hero-grid {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .hero-content {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .hero-badge {
+        display: inline-flex;
+        max-width: 100%;
+        font-size: 15px;
+        padding: 14px 20px;
+    }
+
+    .hero h1 {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(42px, 11vw, 64px);
+        line-height: 1.05;
+        word-break: normal;
+        overflow-wrap: break-word;
+    }
+
+    .hero h1 span {
+        display: inline;
+    }
+
+    .hero-content > p {
+        width: 100%;
+        max-width: 100%;
+        font-size: 18px;
+        line-height: 1.7;
+    }
+
+    .hero-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 14px;
+    }
+
+    .hero-buttons .button {
+        width: 100%;
+    }
+
+    .hero-stats {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    /* DASHBOARD */
+
+    .hero-dashboard {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .dashboard-window {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .dashboard-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .metric-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+    }
+
+    .metric-card {
+        min-width: 0;
+        padding: 18px;
+    }
+
+    .metric-card h2 {
+        font-size: 25px;
+    }
+
+    .dashboard-bottom {
+        grid-template-columns: 1fr;
+    }
+
+    /* GENERAL SECTIONS */
+
+    .section-head {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .section-head h2 {
+        font-size: clamp(34px, 9vw, 48px);
+        line-height: 1.1;
+    }
+
+    .section-head p {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trusted-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .process-timeline {
+        width: 100%;
+    }
+
+    .process-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .cta-panel {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .cta-buttons {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .cta-buttons .button {
+        width: 100%;
+    }
+
+    /* FOOTER */
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+}
+
+/* Smaller phones */
+@media (max-width: 480px) {
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .brand-mark {
+        width: 52px;
+        height: 52px;
+    }
+
+    .brand span {
+        font-size: 20px;
+    }
+
+    .nav-toggle {
+        width: 52px;
+        height: 52px;
+    }
+
+    .hero h1 {
+        font-size: 43px;
+    }
+
+    .hero-content > p {
+        font-size: 17px;
+    }
+
+    .metric-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .trusted-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+/* ==========================================
+   MOBILE NAVIGATION FIX
+========================================== */
+
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .nav-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+        border: none;
+        border-radius: 16px;
+        background: white;
+        cursor: pointer;
+        font-size: 28px;
+        color: #7c3aed;
+        z-index: 1001;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #ffffff;
+        padding: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-menu a {
+        display: block;
+        width: 100%;
+        padding: 16px;
+        text-align: center;
+        border-radius: 12px;
+        text-decoration: none;
+    }
+}
+.nav-toggle {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .nav-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+        border: none;
+        border-radius: 16px;
+        background: #ffffff;
+        color: #7c3aed;
+        font-size: 28px;
+        cursor: pointer;
+        position: relative;
+        z-index: 1001;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        padding: 20px;
+        flex-direction: column;
+        gap: 10px;
+        z-index: 1000;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu a {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+
+    .nav-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        z-index: 9999;
+        cursor: pointer;
+        pointer-events: auto;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        padding: 20px;
+        z-index: 9998;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-menu.open {
+        display: flex;
+    }
+
+    .nav-menu a {
+        display: block;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+}
+/* ==========================================
+   MOBILE MENU
+========================================== */
+
+@media (max-width: 768px) {
+
+    .site-header {
+        position: relative;
+        z-index: 10000;
+        background: #000000;
+    }
+
+    .header-inner {
+        position: relative;
+    }
+
+    /* Hamburger - far right */
+    .nav-toggle {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute !important;
+        right: 20px !important;
+        left: auto !important;
+        top: 50%;
+        transform: translateY(-50%);
+
+        width: 64px;
+        height: 64px;
+
+        background: #ffffff;
+        border: none;
+        border-radius: 18px;
+
+        cursor: pointer;
+        z-index: 10001;
+    }
+
+    .nav-toggle i {
+        color: #7c3aed;
+        font-size: 28px;
+        pointer-events: none;
+    }
+
+    /* Mobile dropdown */
+    .nav-menu {
+        position: absolute !important;
+        top: 100%;
+        left: 0 !important;
+        right: 0 !important;
+
+        width: 100% !important;
+
+        display: none !important;
+        flex-direction: column;
+
+        background: #000000 !important;
+
+        padding: 10px 20px 20px !important;
+        margin: 0 !important;
+
+        z-index: 10000;
+    }
+
+    /* Open menu */
+    .nav-menu.open,
+    .nav-menu.active {
+        display: flex !important;
+    }
+
+    /* Menu links */
+    .nav-menu a {
+        display: block !important;
+
+        width: 100% !important;
+        box-sizing: border-box;
+
+        padding: 18px 15px !important;
+
+        background: #000000 !important;
+        color: #ffffff !important;
+
+        text-align: center !important;
+        text-decoration: none !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        cursor: pointer;
+    }
+
+    /* Active link */
+    .nav-menu a.active {
+        color: #a855f7 !important;
+    }
+
+    /* Hover */
+    .nav-menu a:hover {
+        color: #a855f7 !important;
+        background: #000000 !important;
+    }
+
+    /* Hide Get a Quote in header */
+    .header-buttons {
+        display: none !important;
+    }
+}
+/* ==========================================
+   MOBILE MENU - BLACK FIX
+========================================== */
+
+@media (max-width: 768px) {
+
+    .nav-menu.open,
+    .nav-menu.active {
+        background: #000000 !important;
+        background-color: #000000 !important;
+    }
+
+    .nav-menu.open > a,
+    .nav-menu.active > a {
+        background: #000000 !important;
+        background-color: #000000 !important;
+
+        color: #ffffff !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+
+        display: block !important;
+        width: 100% !important;
+        box-sizing: border-box !important;
+
+        border: none !important;
+        border-bottom: 1px solid #333333 !important;
+    }
+
+    .nav-menu.open > a.active,
+    .nav-menu.active > a.active {
+        background: #000000 !important;
+        background-color: #000000 !important;
+        color: #a855f7 !important;
+    }
+
+    .nav-menu.open > a:hover,
+    .nav-menu.active > a:hover {
+        background: #000000 !important;
+        background-color: #000000 !important;
+        color: #a855f7 !important;
+    }
+}
+/* ==========================================
+   MOBILE HEADER FINAL POSITION
+========================================== */
+
+@media (max-width: 768px) {
+
+    .header-inner {
+        display: flex !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+
+    /* Travik Tech stays on the left */
+    .brand {
+        flex-shrink: 0 !important;
+    }
+
+    /* Get a Quote in the middle */
+    .header-buttons {
+        position: absolute !important;
+        left: 50% !important;
+        transform: translateX(-50%) !important;
+
+        display: flex !important;
+        margin: 0 !important;
+    }
+
+    .header-buttons .button {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        padding: 12px 16px !important;
+        font-size: 13px !important;
+
+        white-space: nowrap !important;
+    }
+
+    /* Hamburger stays at the far right */
+    .nav-toggle {
+        display: flex !important;
+
+        margin-left: auto !important;
+        margin-right: 0 !important;
+
+        width: 56px !important;
+        height: 56px !important;
+
+        flex-shrink: 0 !important;
+
+        align-items: center !important;
+        justify-content: center !important;
+
+        background: #ffffff !important;
+        border: none !important;
+        border-radius: 16px !important;
+
+        z-index: 10001 !important;
+    }
+
+    .nav-toggle i {
+        color: #7c3aed !important;
+        font-size: 25px !important;
+    }
+}
+/* ==========================================
+   MOBILE GET A QUOTE BUTTON - NO ARROW
+========================================== */
+
+@media (max-width: 768px) {
+
+    .header-buttons {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+
+        margin: 0 !important;
+    }
+
+    .header-buttons .button {
+        white-space: nowrap;
+    }
+
+    /* Hide arrow inside Get a Quote */
+    .header-buttons .button i {
+        display: none !important;
+    }
+
+    /* Keep hamburger on the far right */
+    .nav-toggle {
+        position: relative !important;
+        margin-left: auto !important;
+    }
+}
+/* ==========================================
+   FINAL MOBILE HEADER POSITION
+   Get a Quote centered between logo and hamburger
+========================================== */
+
+@media (max-width: 768px) {
+
+    .site-header .header-inner {
+        position: relative !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    /* Travik Tech stays on the left */
+    .site-header .brand {
+        flex-shrink: 0 !important;
+    }
+
+    /* Get a Quote */
+    .site-header .header-buttons {
+        display: block !important;
+
+        position: absolute !important;
+
+        /* Move it into the space between logo and hamburger */
+        left: 58% !important;
+        top: 50% !important;
+
+        transform: translate(-50%, -50%) !important;
+
+        margin: 0 !important;
+
+        z-index: 10001 !important;
+    }
+
+    .site-header .header-buttons .button {
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+
+        white-space: nowrap !important;
+
+        padding: 14px 20px !important;
+        font-size: 14px !important;
+    }
+
+    /* Hamburger stays completely on the far right */
+    .site-header .nav-toggle {
+        display: flex !important;
+
+        margin-left: auto !important;
+
+        position: relative !important;
+
+        z-index: 10002 !important;
+    }
+
+    /* Completely remove the arrow from Get a Quote */
+    .site-header .header-buttons .button i {
+        display: none !important;
+    }
+}
+/* ==========================================
+   FINAL MOBILE HEADER ALIGNMENT
+========================================== */
+
+@media (max-width: 768px) {
+
+    .site-header .header-inner {
+        height: 82px !important;
+        display: flex !important;
+        align-items: center !important;
+        position: relative !important;
+    }
+
+    /* Travik Tech */
+    .site-header .brand {
+        display: flex !important;
+        align-items: center !important;
+        height: 56px !important;
+        margin: 0 !important;
+    }
+
+    /* Get a Quote */
+    .site-header .header-buttons {
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        margin: 0 !important;
+    }
+
+    .site-header .header-buttons .button {
+        height: 56px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /* Hamburger */
+    .site-header .nav-toggle {
+        width: 56px !important;
+        height: 56px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        margin: 0 0 0 auto !important;
+    }
+}/* ==========================================
+   FINAL MOBILE HEADER VERTICAL ALIGNMENT
+========================================== */
+
+@media (max-width: 768px) {
+
+    .site-header .header-inner {
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    /* Travik Tech */
+    .site-header .brand {
+        position: relative !important;
+        top: 0 !important;
+        transform: none !important;
+        display: flex !important;
+        align-items: center !important;
+    }
+
+    /* Get a Quote */
+    .site-header .header-buttons {
+        top: 50% !important;
+        transform: translate(-50%, -50%) !important;
+        margin: 0 !important;
+    }
+
+    .site-header .header-buttons .button {
+        position: relative !important;
+        top: 0 !important;
+        transform: none !important;
+        height: 56px !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+    /* Hamburger */
+    .site-header .nav-toggle {
+        position: relative !important;
+        top: 0 !important;
+        transform: none !important;
+
+        width: 56px !important;
+        height: 56px !important;
+
+        margin-top: 0 !important;
+        margin-bottom: 0 !important;
+
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+}
+/* ==========================================
+   ABOUT PAGE - MOBILE FIX
+========================================== */
+
+@media (max-width: 768px) {
+
+    /* Give the About page content proper space below header */
+    body:has(.about-hero) .about-hero {
+        padding-top: 70px !important;
+    }
+
+    /* Keep About page hero inside the screen */
+    body:has(.about-hero) .about-hero .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Prevent About heading from being cut off */
+    body:has(.about-hero) .about-hero h1 {
+        font-size: 44px !important;
+        line-height: 1.08 !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    /* About paragraph */
+    body:has(.about-hero) .about-hero p {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+}
+/* ==========================================
+   ABOUT CTA - MOBILE SPACING
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    .about-cta {
+        padding-bottom: 40px !important;
+    }
+
+    .about-cta h2 {
+        margin-bottom: 20px !important;
+    }
+
+    .about-cta p {
+        margin-bottom: 28px !important;
+    }
+
+    .about-cta .button {
+        margin-top: 0 !important;
+    }
+
+}
+/* ==========================================
+   ABOUT PAGE - MOBILE TEXT FIX
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    .about-hero {
+        overflow: hidden !important;
+    }
+
+    .about-hero h1,
+    .about-hero p {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    .about-hero h1 {
+        font-size: 44px !important;
+        line-height: 1.08 !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .about-hero p {
+        font-size: 18px !important;
+        line-height: 1.6 !important;
+        overflow-wrap: break-word !important;
+    }
+
+}
+/* ==========================================
+   FINAL MOBILE FIX - ABOUT PAGE
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    .about-hero,
+    .about-hero .container,
+    .about-hero-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+
+    .about-hero .container {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .about-hero h1 {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        overflow-wrap: anywhere !important;
+        word-break: normal !important;
+    }
+
+    .about-hero p {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        overflow-wrap: anywhere !important;
+        word-break: normal !important;
+    }
+
+}
+/* ==========================================
+   ABOUT PAGE - FIX MOBILE OVERFLOW
+   ========================================== */
+
+@media (max-width: 768px) {
+
+    /* Make the About layout fit the screen */
+    .about-hero-grid {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Make the left content fit inside the grid */
+    .about-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Stop the About heading from creating horizontal overflow */
+    .about-content h1 {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        overflow-wrap: break-word !important;
+    }
+
+    /* Keep paragraphs inside the screen */
+    .about-content p {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        overflow-wrap: break-word !important;
+    }
+
+    /* Make the main container fit the phone */
+    .about-hero .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+}
+/* =========================================================
+   ABOUT PAGE - MOBILE FIX
+========================================================= */
+
+@media (max-width: 768px) {
+
+    /* Keep the whole About hero inside the phone */
+    .about-hero,
+    .about-hero .container,
+    .about-hero-grid,
+    .about-content,
+    .about-right,
+    .about-dashboard,
+    .technology-ecosystem {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .about-hero .container {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    /* Main About layout becomes one column */
+    .about-hero-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+
+    /* About text */
+    .about-content {
+        overflow: hidden !important;
+    }
+
+    .about-hero h1 {
+        width: 100% !important;
+        max-width: 100% !important;
+        font-size: 44px !important;
+        line-height: 1.08 !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
+    }
+
+    .about-hero p {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
+    }
+
+    /* Buttons stay inside the screen */
+    .about-hero .hero-buttons {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    .about-hero .hero-buttons .button {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Strengths section */
+    .dashboard-cards {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 16px !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* IMPORTANT: prevents cards from being cut on the right */
+    .dashboard-card {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+
+    .dashboard-card strong,
+    .dashboard-card small {
+        display: block !important;
+        max-width: 100% !important;
+        overflow-wrap: break-word !important;
+        word-wrap: break-word !important;
+    }
+
+    /* Technology Ecosystem */
+    .technology-ecosystem {
+        overflow: hidden !important;
+    }
+
+    .ecosystem-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .ecosystem-image {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .ecosystem-image img {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        box-sizing: border-box !important;
+    }
+}
+/* =========================================================
+   CAREERS PAGE - MOBILE ONLY
+   Keep desktop layout exactly as it is
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* Careers hero becomes a single vertical column */
+    .careers-hero-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        gap: 0 !important;
+    }
+
+    /* Text section */
+    .careers-hero-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        flex: none !important;
+        order: 1 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Make paragraph finish before dashboard */
+    .careers-hero-content p {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        display: block !important;
+        margin-bottom: 30px !important;
+    }
+
+    /* Dashboard MUST be underneath */
+    .career-dashboard {
+        order: 2 !important;
+
+        display: block !important;
+
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+
+        margin: 30px 0 0 0 !important;
+        padding: 0 !important;
+
+        position: relative !important;
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        transform: none !important;
+        float: none !important;
+        clear: both !important;
+
+        grid-column: auto !important;
+        grid-row: auto !important;
+
+        box-sizing: border-box !important;
+    }
+
+    /* Dashboard itself must not create a side-by-side layout */
+    .career-dashboard .dashboard-cards {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+}
+/* =========================================================
+   CAREERS PAGE - MOBILE LAYOUT FIX
+   Keeps desktop layout unchanged
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    /* Force the Careers hero into one column */
+    .careers-hero .hero-grid {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    /* Left text/content stays first */
+    .careers-hero .hero-content {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        flex: none !important;
+    }
+
+    /* Career dashboard moves BELOW the paragraph */
+    .careers-hero .career-dashboard {
+        position: static !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        margin-top: 40px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        transform: none !important;
+        float: none !important;
+        clear: both !important;
+        grid-column: auto !important;
+        grid-row: auto !important;
+        order: 2 !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Make sure the dashboard itself doesn't overflow */
+    .careers-hero .career-dashboard *,
+    .careers-hero .career-dashboard {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+}
+/* =========================================================
+   MOBILE HERO POSITION - ALL PAGES
+   Desktop is NOT affected
+========================================================= */
+
+@media screen and (max-width: 768px) {
+
+    main > .hero {
+        margin-top: 0 !important;
+        padding-top: 40px !important;
+    }
+
+    main > .hero .container {
+        padding-top: 0 !important;
+    }
+
+}
+/* ==========================================
+   TRAVIK TECH ORIGINAL LOGO
+========================================== */
+
+.brand-mark img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+/* ==========================================
+   FINAL LOGO OVERRIDE
+   This overrides all previous logo styles
+========================================== */
+
+.brand-mark {
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
+    max-width: 52px !important;
+    max-height: 52px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+
+    overflow: visible !important;
+    flex-shrink: 0 !important;
+}
+
+.brand-mark img {
+    display: block !important;
+
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
+    max-width: 52px !important;
+    max-height: 52px !important;
+
+    object-fit: contain !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+/* ==========================================
+   FORCE TRAVIK TECH LOGO
+   ========================================== */
+
+.site-header .brand-mark {
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    min-height: 52px !important;
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    background: #000 !important;
+    border-radius: 14px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+}
+
+.site-header .brand-mark i {
+    display: none !important;
+}
+
+.site-header .brand-mark::after {
+    content: "" !important;
+
+    display: block !important;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    background-image: url("../images/Logo.png") !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+}
+/* ==========================================
+   MOBILE FOOTER
+   ========================================== */
+
+@media screen and (max-width: 768px) {
+
+    footer,
+    .site-footer {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+
+    footer .container,
+    .site-footer .container {
+        width: 100% !important;
+        max-width: 100% !important;
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+        box-sizing: border-box !important;
+    }
+
+    footer * ,
+    .site-footer * {
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+        overflow-wrap: break-word !important;
+    }
+
+    footer .footer-inner,
+    .site-footer .footer-inner {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    footer .footer-content,
+    .site-footer .footer-content {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+}
+@media screen and (max-width: 768px) {
+
+    footer .brand-mark i,
+    .site-footer .brand-mark i {
+        display: none !important;
+    }
+
+    footer .brand-mark::after,
+    .site-footer .brand-mark::after {
+        content: "" !important;
+        display: block !important;
+        width: 100% !important;
+        height: 100% !important;
+        background-image: url("../images/Logo.png") !important;
+        background-size: contain !important;
+        background-position: center !important;
+        background-repeat: no-repeat !important;
+    }
+
+}
