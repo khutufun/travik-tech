@@ -1,0 +1,118 @@
+ <!-- ==========================================
+                PORTFOLIO
+========================================== -->
+
+<section class="portfolio section">
+
+<div class="container">
+
+<div class="section-head">
+
+<span class="section-label">
+Our Portfolio
+</span>
+
+<h2>
+Projects We're Proud Of
+</h2>
+
+<p>
+Discover some of the digital solutions we've created for businesses across different industries.
+</p>
+
+</div>
+
+<div class="portfolio-grid">
+
+<!-- Project 1 -->
+
+<article class="portfolio-card">
+
+<div class="portfolio-image website">
+
+<i class="fa-solid fa-globe"></i>
+<h4>Corporate Website</h4>
+
+</div>
+
+<div class="portfolio-content">
+
+<span>Business Website</span>
+
+<h3>Corporate Website</h3>
+
+<p>
+A modern responsive company website designed to increase credibility and generate new business opportunities.
+</p>
+
+<div class="portfolio-tags">
+
+<span>Responsive</span>
+<span>SEO</span>
+<span>Fast</span>
+
+</div>
+
+<a href="portfolio.html">
+
+View Project
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</article>
+
+<!-- Project 2 -->
+
+<article class="portfolio-card">
+
+<div class="portfolio-image ecommerce">
+
+<i class="fa-solid fa-cart-shopping"></i>
+<h4>Online Store</h4>
+
+</div>
+
+<div class="portfolio-content">
+
+<span>E-Commerce</span>
+
+<h3>Online Store</h3>
+
+<p>
+A complete online shopping experience with secure payments, inventory management and a modern user interface.
+</p>
+
+<div class="portfolio-tags">
+
+<span>Payments</span>
+<span>Inventory</span>
+<span>Responsive</span>
+
+</div>
+
+<a href="portfolio.html">
+
+View Project
+
+<i class="fa-solid fa-arrow-right"></i>
+
+</a>
+
+</div>
+
+</article>
+
+</div>
+
+</div>
+<div class="portfolio-more">
+    <a href="portfolio.html" class="button button-primary">
+        View Full Portfolio
+    </a>
+</div>
+
+</section>
