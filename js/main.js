@@ -1225,3 +1225,35 @@ document.addEventListener("keydown", function(e){
     }
 
 });
+// Mobile menu
+const menuButton = document.querySelector('.menu-toggle');
+const nav = document.querySelector('nav');
+
+if (menuButton && nav) {
+    menuButton.addEventListener('click', () => {
+        nav.classList.toggle('mobile-open');
+    });
+}
+/* ==========================================
+   MOBILE MENU
+========================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const navToggle = document.querySelector(".nav-toggle");
+    const navMenu = document.querySelector(".nav-menu");
+
+    if (!navToggle || !navMenu) return;
+
+    navToggle.addEventListener("click", function () {
+        navMenu.classList.toggle("active");
+    });
+
+    // Close menu when a link is clicked
+    navMenu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () {
+            navMenu.classList.remove("active");
+        });
+    });
+
+});
