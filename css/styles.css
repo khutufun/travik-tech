@@ -8769,3 +8769,73 @@ body:has(.services-hero) .container {
         line-height: 1.6;
     }
 }
+/* =========================================
+   SERVICES PAGE - MOBILE HERO FIX
+   ========================================= */
+
+@media screen and (max-width: 768px) {
+
+    .services-hero {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 55px 24px 40px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .services-hero h1 {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+
+        font-size: 3.15rem;
+        line-height: 1.02;
+        letter-spacing: -0.05em;
+
+        box-sizing: border-box;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .services-hero p {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+
+        font-size: 1.05rem;
+        line-height: 1.6;
+
+        box-sizing: border-box;
+        overflow-wrap: anywhere;
+    }
+
+    .services-hero .btn,
+    .services-hero a {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+/* Smaller phones */
+@media screen and (max-width: 480px) {
+
+    .services-hero {
+        padding: 55px 24px 40px;
+    }
+
+    .services-hero h1 {
+        font-size: 3rem;
+        line-height: 1.03;
+        letter-spacing: -0.05em;
+    }
+
+    .services-hero p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
