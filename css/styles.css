@@ -8164,3 +8164,20 @@ img {
     }
 
 }
+/* Fix Performance Dashboard on mobile */
+@media screen and (max-width: 768px) {
+
+    .performance-dashboard h2,
+    .dashboard-title,
+    .performance-dashboard .section-title {
+        width: 100% !important;
+        max-width: 100% !important;
+        font-size: 42px !important;
+        line-height: 1.1 !important;
+        white-space: normal !important;
+        overflow-wrap: break-word !important;
+        word-break: normal !important;
+        box-sizing: border-box !important;
+    }
+
+}
