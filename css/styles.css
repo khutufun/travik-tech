@@ -8164,19 +8164,47 @@ img {
     }
 
 }
-/* Fix Performance Dashboard on mobile */
+/* ==========================================
+   MOBILE - PERFORMANCE DASHBOARD FIX
+========================================== */
+
 @media screen and (max-width: 768px) {
 
-    .performance-dashboard h2,
-    .dashboard-title,
-    .performance-dashboard .section-title {
+    .hero-dashboard .dashboard-header h3 {
         width: 100% !important;
         max-width: 100% !important;
-        font-size: 42px !important;
-        line-height: 1.1 !important;
+        font-size: 36px !important;
+        line-height: 1.15 !important;
         white-space: normal !important;
-        overflow-wrap: break-word !important;
+        overflow: visible !important;
         word-break: normal !important;
+        overflow-wrap: normal !important;
+        box-sizing: border-box !important;
+    }
+
+}
+@media screen and (max-width: 768px) {
+
+    .hero-dashboard {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+
+    .hero-dashboard .dashboard-window {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+    }
+
+    .hero-dashboard .dashboard-header {
+        width: 100% !important;
+        max-width: 100% !important;
+        min-width: 0 !important;
         box-sizing: border-box !important;
     }
 
