@@ -8682,4 +8682,70 @@ body:has(.services-hero) .container {
     body:has(.services-hero) .services-hero br {
         display: none;
     }
+/* ================================
+   SERVICES HERO - MOBILE FIX
+   ================================ */
+
+@media screen and (max-width: 768px) {
+
+  .services-hero {
+    width: 100%;
+    max-width: 100%;
+    padding: 70px 30px 50px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  .services-hero h1 {
+    width: 100%;
+    max-width: 100%;
+    font-size: 3.6rem;
+    line-height: 0.98;
+    letter-spacing: -0.06em;
+    margin: 35px 0 30px;
+    box-sizing: border-box;
+  }
+
+  .services-hero p {
+    width: 100%;
+    max-width: 100%;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+  }
+
+  .services-hero .hero-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .services-hero .hero-buttons a {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
+
+
+/* ================================
+   SMALL PHONES
+   ================================ */
+
+@media screen and (max-width: 480px) {
+
+  .services-hero {
+    padding: 55px 24px 40px;
+  }
+
+  .services-hero h1 {
+    font-size: 3.15rem;
+    line-height: 1;
+    letter-spacing: -0.055em;
+  }
+
+.services-hero p {
+    font-size: 1.05rem;
+    line-height: 1.6;
+} 
