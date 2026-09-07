@@ -8413,3 +8413,273 @@ img {
         font-size: 1rem;
     }
 }
+/* =========================================================
+   TRAVIK TECH — SERVICES PAGE ONLY
+   Mobile + Desktop Layout Fix
+   ========================================================= */
+
+/* Everything below only applies when the Services page
+   contains .services-hero */
+body:has(.services-hero) {
+
+    /* Prevent horizontal overflow */
+    overflow-x: hidden;
+
+    /* Keep sections inside the screen */
+    width: 100%;
+}
+
+/* =========================================================
+   SERVICES HERO
+   ========================================================= */
+
+body:has(.services-hero) .services-hero {
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body:has(.services-hero) .services-hero .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Hero heading */
+
+body:has(.services-hero) .services-hero h1 {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-wrap: normal;
+    word-break: normal;
+}
+
+body:has(.services-hero) .services-hero .highlight {
+    display: inline;
+}
+
+/* Hero paragraph */
+
+body:has(.services-hero) .services-hero p {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+}
+
+/* =========================================================
+   SERVICES CONTENT / CARDS
+   ========================================================= */
+
+body:has(.services-hero) .services-section,
+body:has(.services-hero) .services-grid,
+body:has(.services-hero) .service-grid {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+body:has(.services-hero) .service-card {
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+body:has(.services-hero) .service-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+body:has(.services-hero) .service-card h2,
+body:has(.services-hero) .service-card h3 {
+    overflow-wrap: break-word;
+}
+
+body:has(.services-hero) .service-card p {
+    overflow-wrap: break-word;
+}
+
+/* =========================================================
+   SERVICES BUTTONS
+   ========================================================= */
+
+body:has(.services-hero) .services-hero a,
+body:has(.services-hero) .services-hero button {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* =========================================================
+   MOBILE — UP TO 480px
+   ========================================================= */
+
+@media screen and (max-width: 480px) {
+
+    body:has(.services-hero) .services-hero {
+        padding-top: 70px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 60px;
+    }
+
+    body:has(.services-hero) .services-hero .container {
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    /* Our Services pill */
+
+    body:has(.services-hero) .services-hero .section-label {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 14px 24px;
+        margin-bottom: 35px;
+
+        font-size: 1rem;
+        line-height: 1.2;
+
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* Main heading */
+
+    body:has(.services-hero) .services-hero h1 {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 0 30px 0;
+
+        font-size: clamp(2.8rem, 12vw, 3.5rem);
+        line-height: 0.98;
+        letter-spacing: -0.055em;
+
+        overflow-wrap: break-word;
+    }
+
+    /* Purple words */
+
+    body:has(.services-hero) .services-hero h1 .highlight {
+        font-size: inherit;
+        line-height: inherit;
+        white-space: normal;
+    }
+
+    /* Description */
+
+    body:has(.services-hero) .services-hero p {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+
+        font-size: 1.08rem;
+        line-height: 1.65;
+
+        overflow-wrap: break-word;
+    }
+
+    /* Service cards */
+
+    body:has(.services-hero) .service-grid,
+    body:has(.services-hero) .services-grid {
+        grid-template-columns: 1fr !important;
+        width: 100%;
+    }
+
+    body:has(.services-hero) .service-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    /* Any service section containers */
+
+    body:has(.services-hero) .services-section .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        box-sizing: border-box;
+    }
+
+    /* Images */
+
+    body:has(.services-hero) img {
+        max-width: 100%;
+    }
+
+}
+
+/* =========================================================
+   SMALL TABLETS — 481px to 768px
+   ========================================================= */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    body:has(.services-hero) .services-hero {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    body:has(.services-hero) .services-hero h1 {
+        font-size: clamp(3.5rem, 9vw, 5rem);
+        line-height: 1;
+    }
+
+    body:has(.services-hero) .services-hero p {
+        max-width: 700px;
+    }
+
+    body:has(.services-hero) .service-grid,
+    body:has(.services-hero) .services-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+/* =========================================================
+   TABLET / DESKTOP
+   ========================================================= */
+
+@media screen and (min-width: 769px) {
+
+    body:has(.services-hero) .services-hero h1 {
+        font-size: clamp(4.5rem, 7vw, 7rem);
+        line-height: 0.95;
+    }
+
+    body:has(.services-hero) .services-hero p {
+        font-size: 1.2rem;
+        line-height: 1.7;
+    }
+
+}
+
+/* =========================================================
+   EXTRA SAFETY — SERVICES PAGE
+   ========================================================= */
+
+body:has(.services-hero) *,
+body:has(.services-hero) *::before,
+body:has(.services-hero) *::after {
+    box-sizing: border-box;
+}
+
+body:has(.services-hero) .container {
+    overflow: visible;
+}
+
+@media screen and (max-width: 480px) {
+
+    body:has(.services-hero) .container {
+        overflow: visible;
+    }
+
+    body:has(.services-hero) .services-hero br {
+        display: none;
+    }
+}
