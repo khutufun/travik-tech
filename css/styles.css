@@ -8983,3 +8983,52 @@ body:has(.services-hero) .container {
     }
 
 }
+/* ==============================
+   WHATSAPP MOBILE FIX
+   ============================== */
+
+@media (max-width: 768px) {
+    .whatsapp-container {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        z-index: 9999;
+    }
+
+    .whatsapp-popup {
+        position: absolute;
+        width: calc(100vw - 40px);
+        max-width: 350px;
+        right: 0;
+        bottom: 70px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .whatsapp-popup * {
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-container {
+        right: 15px;
+        bottom: 15px;
+    }
+
+    .whatsapp-popup {
+        width: calc(100vw - 30px);
+        max-width: none;
+        right: 0;
+        bottom: 65px;
+    }
+
+    .whatsapp-popup p,
+    .whatsapp-popup span,
+    .whatsapp-popup a {
+        white-space: normal;
+        word-break: normal;
+        overflow-wrap: break-word;
+    }
+}
